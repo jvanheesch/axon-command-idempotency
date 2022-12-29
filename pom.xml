@@ -18,15 +18,22 @@
         <java.version>17</java.version>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.axonframework</groupId>
+            <groupId>com.github.jvanheesch.AxonFramework</groupId>
             <artifactId>axon-spring-boot-starter</artifactId>
-            <version>4.6.2</version>
+            <version>8de17c281d890a4598d640c788aad4557c7ef787</version>
         </dependency>
         <dependency>
             <groupId>com.google.guava</groupId>
