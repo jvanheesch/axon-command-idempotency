@@ -44,4 +44,12 @@ public class BankAccount {
     public void handle(MoneyDeposited event) {
         balance = balance.add(event.amount());
     }
+
+    public String getId() {
+        return id;
+    }
+
+    public BigDecimal getBalance() {
+        return balance;
+    }
 }
