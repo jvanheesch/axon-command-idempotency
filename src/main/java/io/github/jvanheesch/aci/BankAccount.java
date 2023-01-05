@@ -13,7 +13,7 @@ import static io.github.jvanheesch.aci.Events.BankAccountCreated;
 import static io.github.jvanheesch.aci.Events.MoneyDeposited;
 import static org.axonframework.modelling.command.AggregateLifecycle.apply;
 
-@Aggregate
+@Aggregate(idempotent = true)
 public class BankAccount {
     @AggregateIdentifier
     private String id;
